@@ -1,0 +1,711 @@
+```html
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Computer Science Graduate">
+    <meta name="description" content="An internship learning and training portfolio">
+    <title>Internship Learning Portal</title>
+
+    <base href="./">
+
+    <link rel="icon" href="data:,">
+    <link rel="alternate" type="text/html" href="index.html" title="Internship Portal">
+</head>
+
+<body>
+
+    <header id="home" class="page-header" title="Internship Portal Header">
+        <h1>Internship Learning Portal</h1>
+        <p>Learn, practice, and build your career through training.</p>
+
+        <nav aria-label="Main navigation">
+            <a href="#home">Home</a> |
+            <a href="#about">About</a> |
+            <a href="#skills">Skills</a> |
+            <a href="#training">Training</a> |
+            <a href="#assignments">Assignments</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <hr>
+
+        <p>
+            Application progress:
+            <progress id="progress" value="60" max="100">60%</progress>
+        </p>
+    </header>
+
+    <main>
+
+        <!-- HOME SECTION -->
+        <section aria-labelledby="home-heading">
+            <h2 id="home-heading">Home</h2>
+
+            <picture>
+                <source srcset="internship-banner.webp" type="image/webp">
+                <source srcset="internship-banner.jpg" type="image/jpeg">
+                <img src="internship-banner.jpg"
+                     alt="Interns learning computer programming"
+                     width="600" height="300">
+            </picture>
+
+            <p>
+                Welcome to our internship learning portal. Explore training,
+                improve your technical skills, and complete practical projects.
+            </p>
+
+            <p>
+                Start your journey by visiting the
+                <a href="#training">training section</a>.
+            </p>
+
+            <blockquote cite="https://example.com">
+                Learning becomes valuable when knowledge is applied through practice.
+            </blockquote>
+
+            <p>
+                Our next training session begins on
+                <time datetime="2026-11-02">November 2, 2026</time>.
+            </p>
+
+            <p>
+                Current status:
+                <meter min="0" max="10" low="3" high="7"
+                       optimum="10" value="8">8 out of 10</meter>
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" data-section="about">
+            <h2>About Us</h2>
+
+            <article>
+                <h3>Our Mission</h3>
+                <p>
+                    We help beginners gain practical experience in software
+                    development, artificial intelligence, and web technologies.
+                </p>
+            </article>
+
+            <article>
+                <h3>Our Approach</h3>
+                <p>
+                    We combine <strong>theory</strong> with
+                    <em>hands-on practice</em>, assignments, and projects.
+                </p>
+
+                <p>
+                    We teach <abbr title="HyperText Markup Language">HTML</abbr>
+                    and other web technologies.
+                </p>
+
+                <p>
+                    A <dfn id="internship-definition">internship</dfn>
+                    is a period of practical work experience in an organization.
+                </p>
+            </article>
+
+            <address>
+                Training Center<br>
+                Lahore, Pakistan<br>
+                Email:
+                <a href="mailto:training@example.com">training@example.com</a>
+            </address>
+        </section>
+
+        <hr>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <h3>Technical Skills</h3>
+
+            <ul>
+                <li>HTML and web development</li>
+                <li>Python programming</li>
+                <li>SQL and databases</li>
+                <li>Git and GitHub</li>
+                <li>Artificial intelligence fundamentals</li>
+            </ul>
+
+            <h3>Learning Priorities</h3>
+
+            <ol>
+                <li>Understand the fundamentals</li>
+                <li>Practice with small examples</li>
+                <li>Complete assignments</li>
+                <li>Build a project</li>
+            </ol>
+
+            <h3>Example Skill Levels</h3>
+
+            <table>
+                <caption>Technical Skills Assessment</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Skill</th>
+                        <th scope="col">Level</th>
+                        <th scope="col">Priority</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Beginner</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Intermediate</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                        <td>Beginner</td>
+                        <td>Medium</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Levels are examples for practice.</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <p>
+                A simple Python variable is
+                <var>score</var> = <data value="100">100 points</data>.
+            </p>
+
+            <pre><code>def greet(name):
+    return "Hello, " + name
+
+print(greet("Intern"))</code></pre>
+
+            <p>
+                Example equation: x<sup>2</sup> + H<sub>2</sub>O.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- TRAINING SECTION -->
+        <section id="training">
+            <h2>Training Program</h2>
+
+            <p>
+                Training includes lessons, practice tasks, and project work.
+                Sessions run from
+                <time datetime="09:00">9:00 AM</time> to
+                <time datetime="12:00">12:00 PM</time>.
+            </p>
+
+            <table>
+                <caption>Weekly Training Schedule</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Day</th>
+                        <th scope="col">Topic</th>
+                        <th scope="col">Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML Fundamentals</td>
+                        <td>2 hours</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Forms and Semantic HTML</td>
+                        <td>2 hours</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Project Practice</td>
+                        <td>3 hours</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Training Video</h3>
+
+            <video controls width="480">
+                <source src="training-video.mp4" type="video/mp4">
+                <track src="captions.vtt"
+                       kind="captions"
+                       srclang="en"
+                       label="English captions">
+                Your browser does not support the video element.
+            </video>
+
+            <h3>Training Audio</h3>
+
+            <audio controls>
+                <source src="training-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>External Learning Resource</h3>
+
+            <iframe
+                src="https://example.com"
+                title="Example learning resource"
+                width="500"
+                height="250"
+                loading="lazy">
+            </iframe>
+
+            <h3>Additional Resource</h3>
+
+            <object data="training-guide.pdf"
+                    type="application/pdf"
+                    width="500"
+                    height="300">
+                <p>
+                    PDF preview unavailable.
+                    <a href="training-guide.pdf">Open the training guide</a>.
+                </p>
+            </object>
+
+            <p>
+                Another way to embed a resource is the
+                <code>&lt;embed&gt;</code> element:
+            </p>
+
+            <embed src="training-guide.pdf"
+                   type="application/pdf"
+                   width="400"
+                   height="250">
+        </section>
+
+        <hr>
+
+        <!-- ASSIGNMENTS SECTION -->
+        <section id="assignments">
+            <h2>Assignments</h2>
+
+            <article>
+                <h3>HTML Practice Tasks</h3>
+
+                <ol>
+                    <li>Build a personal profile page.</li>
+                    <li>Create an internship registration form.</li>
+                    <li>Practice semantic and media elements.</li>
+                    <li>Create a complete internship website.</li>
+                </ol>
+
+                <p>
+                    Submit assignments before
+                    <time datetime="2026-11-10">November 10, 2026</time>.
+                </p>
+
+                <p>
+                    Example long word:
+                    computer<wbr>programming<wbr>assignment
+                </p>
+
+                <p>
+                    <del>Old deadline: November 5</del>
+                    <ins>New deadline: November 10</ins>
+                </p>
+
+                <p>
+                    The previous task is <s>incomplete</s> now completed.
+                </p>
+            </article>
+
+            <h3>Expandable Assignment Instructions</h3>
+
+            <details>
+                <summary>How do I submit an assignment?</summary>
+                <p>
+                    Save your HTML file, open it in a browser, check the
+                    form controls and links, and then submit the file
+                    through your assigned platform.
+                </p>
+            </details>
+
+            <details>
+                <summary>What should I check before submission?</summary>
+                <ul>
+                    <li>All tags are properly closed.</li>
+                    <li>Images have useful alternative text.</li>
+                    <li>Links point to the correct destinations.</li>
+                    <li>Form labels match their input IDs.</li>
+                </ul>
+            </details>
+
+            <h3>Dialog Example</h3>
+
+            <dialog open>
+                <p>This is an example of an HTML dialog.</p>
+                <p>It is displayed because the open attribute is present.</p>
+                <a href="#assignments">Return to assignments</a>
+            </dialog>
+
+            <p>
+                The dialog is open by default here. Without JavaScript,
+                this example does not provide a custom open or close button.
+            </p>
+
+            <h3>Reusable HTML Template</h3>
+
+            <template id="assignment-template">
+                <article>
+                    <h3>New Assignment</h3>
+                    <p>Assignment description goes here.</p>
+                </article>
+            </template>
+
+            <p>
+                The template stores HTML markup but does not display it
+                automatically.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+
+            <p>
+                Complete the form below to send an inquiry.
+                Fields marked as required must be completed.
+            </p>
+
+            <form action="#" method="post"
+                  enctype="multipart/form-data"
+                  autocomplete="on">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name"
+                           name="full_name"
+                           placeholder="Enter your name"
+                           minlength="2"
+                           maxlength="60"
+                           autocomplete="name"
+                           required>
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email"
+                           name="email"
+                           autocomplete="email"
+                           required>
+                    <br><br>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone"
+                           name="phone"
+                           pattern="[0-9]{11}"
+                           title="Enter 11 digits"
+                           autocomplete="tel">
+                    <br><br>
+
+                    <label for="birth-date">Date of Birth:</label>
+                    <input type="date" id="birth-date"
+                           name="birth_date"
+                           min="1950-01-01"
+                           max="2010-12-31">
+                    <br><br>
+
+                    <label for="meeting-time">Preferred Meeting Time:</label>
+                    <input type="time" id="meeting-time"
+                           name="meeting_time">
+                    <br><br>
+
+                    <label for="meeting-date">Preferred Meeting Date:</label>
+                    <input type="datetime-local" id="meeting-date"
+                           name="meeting_date">
+                    <br><br>
+
+                    <label for="month">Preferred Start Month:</label>
+                    <input type="month" id="month" name="start_month">
+                    <br><br>
+
+                    <label for="week">Preferred Training Week:</label>
+                    <input type="week" id="week" name="training_week">
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Internship Preferences</legend>
+
+                    <label for="position">Select Position:</label>
+                    <select id="position" name="position" required>
+                        <option value="">Choose a position</option>
+                        <optgroup label="Development">
+                            <option value="web">Web Developer Intern</option>
+                            <option value="python">Python Intern</option>
+                        </optgroup>
+                        <optgroup label="AI">
+                            <option value="ai">AI/ML Intern</option>
+                            <option value="cv">Computer Vision Intern</option>
+                        </optgroup>
+                    </select>
+                    <br><br>
+
+                    <label for="skills">Primary Skill:</label>
+                    <input type="text" id="skills" name="skill"
+                           list="skill-list" required>
+
+                    <datalist id="skill-list">
+                        <option value="HTML"></option>
+                        <option value="Python"></option>
+                        <option value="SQL"></option>
+                        <option value="Computer Vision"></option>
+                    </datalist>
+                    <br><br>
+
+                    <label for="experience">Years of Experience:</label>
+                    <input type="number" id="experience"
+                           name="experience"
+                           min="0" max="30" step="1" value="0">
+                    <br><br>
+
+                    <label for="confidence">Confidence Level:</label>
+                    <input type="range" id="confidence"
+                           name="confidence"
+                           min="1" max="10" value="5">
+                    <br><br>
+
+                    <p>Preferred work mode:</p>
+
+                    <input type="radio" id="onsite" name="work_mode"
+                           value="onsite" required>
+                    <label for="onsite">On-site</label>
+
+                    <input type="radio" id="remote" name="work_mode"
+                           value="remote">
+                    <label for="remote">Remote</label>
+
+                    <input type="radio" id="hybrid" name="work_mode"
+                           value="hybrid">
+                    <label for="hybrid">Hybrid</label>
+                    <br><br>
+
+                    <label for="portfolio">Portfolio URL:</label>
+                    <input type="url" id="portfolio" name="portfolio"
+                           placeholder="https://example.com">
+                    <br><br>
+
+                    <label for="resume">Upload Resume:</label>
+                    <input type="file" id="resume" name="resume"
+                           accept=".pdf,.doc,.docx">
+                    <br><br>
+
+                    <label for="documents">Additional Documents:</label>
+                    <input type="file" id="documents" name="documents"
+                           accept=".pdf,.docx,.txt" multiple>
+                    <br><br>
+
+                    <label for="color">Choose a preferred theme color:</label>
+                    <input type="color" id="color" name="theme_color"
+                           value="#336699">
+                    <br><br>
+
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message"
+                              rows="5" cols="40"
+                              minlength="10" maxlength="1000"
+                              placeholder="Write your message..."
+                              required></textarea>
+                    <br><br>
+
+                    <input type="checkbox" id="consent" name="consent"
+                           value="yes" required>
+                    <label for="consent">
+                        I confirm my information is correct.
+                    </label>
+                    <br><br>
+
+                    <input type="checkbox" id="updates" name="updates"
+                           value="yes">
+                    <label for="updates">
+                        Send me training updates.
+                    </label>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Form Controls</legend>
+
+                    <label for="application-code">Application Code:</label>
+                    <input type="text" id="application-code"
+                           name="application_code"
+                           value="INT-2026-01" readonly>
+                    <br><br>
+
+                    <label for="status">Account Status:</label>
+                    <input type="text" id="status" value="Pending" disabled>
+                    <br><br>
+
+                    <label for="search">Search a topic:</label>
+                    <input type="search" id="search" name="search"
+                           placeholder="Search">
+                    <br><br>
+
+                    <label for="password-demo">Password field example:</label>
+                    <input type="password" id="password-demo"
+                           name="password_demo"
+                           minlength="8"
+                           autocomplete="new-password">
+                    <br><br>
+
+                    <input type="hidden" name="form_version" value="1">
+
+                    <label for="submission-status">Submission Status:</label>
+                    <output id="submission-status" name="submission_status">
+                        Not submitted
+                    </output>
+                    <br><br>
+
+                    <input type="submit" value="Submit Inquiry">
+                    <input type="reset" value="Reset Form">
+                    <input type="button" value="Example Button">
+                </fieldset>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- GLOBAL ATTRIBUTE EXAMPLES -->
+        <section id="html-extras">
+            <h2>Additional HTML Examples</h2>
+
+            <p class="example-text" title="A tooltip example"
+               lang="en" dir="ltr">
+                This paragraph demonstrates class, title, lang, and dir.
+            </p>
+
+            <p hidden>This paragraph is hidden from normal display.</p>
+
+            <p tabindex="0">
+                This paragraph can receive keyboard focus.
+            </p>
+
+            <p contenteditable="true" spellcheck="true">
+                You can edit this example text directly in the browser.
+            </p>
+
+            <p draggable="true">
+                This paragraph demonstrates the draggable attribute.
+            </p>
+
+            <p translate="no">
+                HTML should remain unchanged by automatic translation.
+            </p>
+
+            <p data-topic="html" data-level="beginner">
+                This paragraph has custom data attributes.
+            </p>
+
+            <p>
+                A mathematical variable is <var>n</var>.
+            </p>
+
+            <p>
+                <ruby>
+                    HTML
+                    <rp>(</rp>
+                    <rt>HyperText Markup Language</rt>
+                    <rp>)</rp>
+                </ruby>
+            </p>
+
+            <p>
+                A long email-style word:
+                internship<wbr>application<wbr>registration
+            </p>
+
+            <p>
+                Text can be <mark>highlighted</mark>,
+                <small>shown in smaller text</small>, or
+                <b>made visually bold</b>.
+            </p>
+
+            <p>
+                Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save a file.
+            </p>
+
+            <p>
+                Example output:
+                <samp>Form loaded successfully.</samp>
+            </p>
+
+            <p>
+                Learn about <a href="#internship-definition">internships</a>
+                using the definition above.
+            </p>
+
+            <p>
+                <bdi>Student123</bdi> is an example of bidirectional isolation.
+            </p>
+
+            <p>
+                <bdo dir="rtl">This text direction is overridden.</bdo>
+            </p>
+
+            <p>
+                A quotation using the inline quote tag:
+                <q>Practice is important for learning.</q>
+            </p>
+
+            <p>
+                Example citation:
+                <cite>HTML Learning Notes</cite>
+            </p>
+
+            <p>
+                A horizontal rule separates major topics.
+            </p>
+            <hr>
+
+            <p>
+                <small>End of the additional HTML examples.</small>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+
+        <address>
+            Contact the training team at
+            <a href="mailto:training@example.com">training@example.com</a>.
+            <br>
+            Lahore, Pakistan
+        </address>
+
+        <p>
+            <small>&copy; 2026 Internship Learning Portal.</small>
+        </p>
+
+        <a href="#home">Back to top</a>
+    </footer>
+
+    <noscript>
+        <p>
+            This website uses HTML-only examples. Features that require
+            JavaScript, such as custom dialog controls and form processing,
+            are not implemented.
+        </p>
+    </noscript>
+
+</body>
+</html>
+```
